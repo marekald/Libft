@@ -1,20 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 17:20:36 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 17:31:52 by marekald         ###   ########.fr       */
+/*   Created: 2025/09/18 18:45:53 by marekald          #+#    #+#             */
+/*   Updated: 2025/09/18 19:03:28 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h> /*eliminar*/
+int	get_len(int n)
+{
+	int	len;
+	
+	len = 0;
+	if (n <= 0)
+		len++;
+	while (n != 0)
+	{
+		len++;
+		n = n / 10;
+	}
+	return (len);
+}
 
-#endif
+char	*ft_itoa(int n)
+{
+	char	*c;
+	int		len;
+	
+	len = get_len(n);
+	c = malloc(len * sizeof(char));
+	return (c);	
+}
+
+int	main(void)
+{
+	int	n = 1234;
+	printf("int: %i\nstr: %s", n, ft_itoa(n));
+}

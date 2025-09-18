@@ -1,20 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 17:20:36 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 17:31:52 by marekald         ###   ########.fr       */
+/*   Created: 2025/09/18 17:13:42 by marekald          #+#    #+#             */
+/*   Updated: 2025/09/18 17:33:38 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h> /*eliminar*/
+void ft_bzero(void *str, size_t n)
+{
+	unsigned char	*s;
+	size_t			i;
+	
+	i = 0;
+	s = (unsigned char *)str;
+	while (i < n)
+	{
+		s[i] = '\0';
+		i++;
+	}
+}
 
-#endif
+/* int	main(void)
+{
+	char mem[] = "adfa";
+	printf("antes: %s\n", mem);
+	ft_bzero(mem, 5);
+	printf("despues: %s\n", mem);
+} */

@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/18 17:20:36 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 17:31:52 by marekald         ###   ########.fr       */
+/*   Created: 2025/09/18 18:44:49 by marekald          #+#    #+#             */
+/*   Updated: 2025/09/18 18:45:43 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h> /*eliminar*/
+ft_isprint (int c)
+{
+	if (c <= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
+}
 
-#endif
+int	main()
+{
+	int	n = 165;
+	printf("n:%i is %i", n, ft_isprint(n));
+}
