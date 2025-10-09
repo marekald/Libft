@@ -6,67 +6,11 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:38:21 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 14:00:11 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 15:48:43 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	unsigned int	n;
-	unsigned int	i;
-
-	i = 0;
-	n = 0;
-	while (src[n] != '\0')
-		n++;
-	if (dstsize == 0)
-		return (n);
-	while (i < dstsize - 1 && src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (n);
-}
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (*str != '\0')
-	{
-		i++;
-		str++;
-	}
-	return (i);
-}
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	char	*str;
-	size_t	i;
-
-	i = 0;
-	if (start >= ft_strlen(s))
-	{
-		str = (char *)malloc(sizeof(char) * 1);
-		if (!str)
-			return (NULL);
-		str[i] = '\0';
-		return (str);
-	}
-	if (len > ft_strlen(s) - start)
-		len = ft_strlen(s) - start;
-	str = (char *)malloc(sizeof(char) * len + 1);
-	if (!str)
-		return (NULL);
-	ft_strlcpy(str, &s[start], len + 1);
-	str[len] = '\0';
-	return (str);
-}
 
 int	ft_countword(char const *s, char c)
 {
@@ -161,4 +105,3 @@ char	**ft_split(char const *s, char c)
 		printf("Error al dividir la cadena.\n");
     return 0;
 } */
-
