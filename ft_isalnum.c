@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:08:30 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 18:26:59 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 10:59:54 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
+/* 
 int	main()
 {
 	int	n = 48;
 	printf("n:%i is %i", n, ft_isalnum(n));
-}
+} */

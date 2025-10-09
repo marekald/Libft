@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:45:53 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 19:03:28 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 07:49:24 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,4 @@ int	main(void)
 	int	n = 1234;
 	printf("int: %i\nstr: %s", n, ft_itoa(n));
 }
+

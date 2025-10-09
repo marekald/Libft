@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:35:10 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 18:08:27 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/08 14:17:47 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
