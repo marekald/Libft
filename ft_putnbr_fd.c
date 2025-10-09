@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:38:08 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 13:41:07 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:07:50 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
-		nb = nb* -1;
+		nb = nb * -1;
 	}
 	if (nb > 9)
 		ft_putnbr_fd(nb / 10, fd);

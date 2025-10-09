@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 11:05:32 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 11:05:35 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:09:18 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_toupper(int c)
 	{
 		c = c - 32;
 		return (c);
-	}	
+	}
 	else
 		return (c);
 }

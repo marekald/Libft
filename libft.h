@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 11:05:20 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 15:52:26 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:09:45 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *c);
-void    *ft_calloc(size_t i, size_t size);
+void	*ft_calloc(size_t i, size_t size);
 char	*ft_strdup(const char *t);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);

@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:13:42 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 17:33:38 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:06:30 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *str, size_t n)
+void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*s;
 	size_t			i;
-	
+
 	i = 0;
 	s = (unsigned char *)str;
 	while (i < n)

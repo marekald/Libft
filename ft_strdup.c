@@ -6,11 +6,11 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 11:07:45 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 11:07:46 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:08:23 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

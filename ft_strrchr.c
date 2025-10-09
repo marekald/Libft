@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 11:06:25 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 11:06:28 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 16:08:59 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (str[i] != '\0')
 		i++;
 	while (i >= 0)
-	{	
+	{
 		if (str[i] == (char)c)
 			return (&str[i]);
 		i--;
