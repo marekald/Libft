@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:40:59 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 18:44:42 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 13:34:42 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-ft_isdigit (int c)
+int ft_isdigit (int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:41:16 by marekald          #+#    #+#             */
-/*   Updated: 2025/09/18 17:19:50 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 13:36:33 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *c)
+int	ft_atoi(const char *c)
 {
 	int	i;
 	int	num;

@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:45:53 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 07:49:24 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/09 13:45:02 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@ char	*ft_itoa(int n)
 	
 	len = get_len(n);
 	c = malloc(len * sizeof(char));
-	return (c);	
+	return (c);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	n = 1234;
 	printf("int: %i\nstr: %s", n, ft_itoa(n));
-}
+} */
 
