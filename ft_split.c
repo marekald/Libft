@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 10:38:21 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 15:48:43 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 16:11:17 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

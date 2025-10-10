@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:44:49 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 16:06:58 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 16:59:59 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isprint(int c)
 {
-	if (c <= 32 && c <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 11:05:20 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 16:09:45 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 17:30:57 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

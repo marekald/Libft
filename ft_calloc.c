@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 17:35:10 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/08 14:17:47 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 17:37:38 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t i, size_t size)
 	unsigned char	*str;
 	size_t			j;
 
+	if (size != 0 && i > SIZE_MAX / size)
+		return (NULL);
 	j = 0;
 	arr = malloc(i * size);
 	if (arr == NULL)
@@ -33,7 +35,7 @@ void	*ft_calloc(size_t i, size_t size)
 
 /* int	main(void)
 {
-	int *arr = ft_calloc(4, sizeof(int));
+	int *arr = ft_calloc(SIZE_MAX, SIZE_MAX);
 	int	i = 0;
 
 	if (arr != NULL)

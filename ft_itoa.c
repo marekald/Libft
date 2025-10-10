@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/18 18:45:53 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 16:07:09 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 17:03:12 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+int	absolute_value(int n)
+{
+	if (n < 0)
+		return (-n);
+	return (n);
+}
 
 int	get_len(int n)
 {
@@ -29,12 +36,25 @@ int	get_len(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*c;
+	char	*result;
 	int		len;
 
 	len = get_len(n);
-	c = malloc(len * sizeof(char));
-	return (c);
+	result = malloc(sizeof(char) * len + 1);
+	if (!result)
+		return (0);
+	result[len] = '\0';
+	if (n < 0)
+		result[0] = '-';
+	else if (n == 0)
+		result[0] = '0';
+	while (n != 0)
+	{
+		len--;
+		result[len] = absolute_value(n % 10) + '0';
+		n = n / 10;
+	}
+	return (result);
 }
 
 /* int	main(void)

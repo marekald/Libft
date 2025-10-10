@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urdiliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 15:41:16 by marekald          #+#    #+#             */
-/*   Updated: 2025/10/09 16:05:50 by marekald         ###   ########.fr       */
+/*   Updated: 2025/10/10 16:53:04 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,17 @@ int	ft_atoi(const char *c)
 	i = 0;
 	neg = 1;
 	num = 0;
-	while (c[i] != '\0' && (c[i] >= 7 && c[i] <= 13))
+	while (c[i] != '\0' && ((c[i] >= 7 && c[i] <= 13) || c[i] == 32))
 		i++;
-	while (c[i] != '\0' && (c[i] == '-' || c[i] == '+'))
+	if (c[i] != '\0' && (c[i] == '-' || c[i] == '+'))
 	{
 		if (c[i] == '-')
-			neg = neg * -1;
+			neg = -1;
 		i++;
 	}
 	while (c[i] != '\0')
 	{
-		if (c[i] <= '0' || c[i] >= '9')
+		if (c[i] < '0' || c[i] > '9')
 			break ;
 		num = 10 * num + (c[i] - 48);
 		i++;
@@ -39,8 +39,8 @@ int	ft_atoi(const char *c)
 	return (num * neg);
 }
 
-/* #include <stdio.h>
-int	main (void)
+/* int	main (void)
 {
-	printf("%i\n", ft_atoi("---+112"));
+	printf("%i\n", ft_atoi("\t\n\r\v\f  469 \n"));
+	printf("%i\n", atoi("\t\n\r\v\f  469 \n"));
 } */
