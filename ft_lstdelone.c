@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:02:39 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/21 18:30:51 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/21 18:32:30 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	del(void *content)
 	free(content);
 }
 
+#include <stdio.h>
 int	main(void)
 {
 	t_list	*lst;

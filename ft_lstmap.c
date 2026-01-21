@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:02:43 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/21 18:31:26 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/21 18:32:15 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-/* 
+/*
+#include <stdio.h>
 void	del(void *content)
 {
 	free(content);

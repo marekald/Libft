@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 18:02:40 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/21 18:31:09 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/21 18:50:46 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,11 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		{
 			f(lst->content);
 			lst = lst->next;
-		}	
+		}
 	}
 }
-/* 
+/*
+#inlcude <stdio.h>
 void	print_list(void *content)
 {
 	printf("%s\n", (char *)content);

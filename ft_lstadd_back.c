@@ -6,10 +6,9 @@
 /*   By: marekald <marekald@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/21 17:35:34 by marekald          #+#    #+#             */
-/*   Updated: 2026/01/21 17:36:29 by marekald         ###   ########.fr       */
+/*   Updated: 2026/01/21 18:50:35 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -30,7 +29,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		}
 	}
 }
-
+/* 
 #include <stdio.h>
 int	main()
 {
@@ -45,3 +44,4 @@ int	main()
 	}
 	return (0);
 }
+ */
